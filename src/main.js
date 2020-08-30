@@ -29,6 +29,7 @@ import Notifications from "./components/NotificationPlugin";
 
 // MaterialDashboard plugin
 import MaterialDashboard from "./material-dashboard";
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 import Chartist from "chartist";
 

@@ -13,7 +13,7 @@
       </a>
 
       <a
-        href="https://www.creative-tim.com/product/vue-material-dashboard"
+        href="https://clubpleinair.association.usherbrooke.ca/"
         target="_blank"
         class="simple-text logo-normal"
       >
@@ -55,7 +55,7 @@ export default {
     },
     imgLogo: {
       type: String,
-      default: require("@/assets/img/vue-logo.png")
+      default: require("@/assets/img/LogoPleinAir_3_couleurs_BGsombre.png.webp")
     },
     sidebarItemColor: {
       type: String,

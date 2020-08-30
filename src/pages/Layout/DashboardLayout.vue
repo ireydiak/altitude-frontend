@@ -11,29 +11,17 @@
                 <md-icon>dashboard</md-icon>
                 <p>Dashboard</p>
             </sidebar-link>
-            <sidebar-link to="/user">
+            <sidebar-link to="users">
                 <md-icon>person</md-icon>
-                <p>User Profile</p>
+                <p>All Users</p>
             </sidebar-link>
-            <sidebar-link to="/table">
-                <md-icon>content_paste</md-icon>
-                <p>Table list</p>
-            </sidebar-link>
-            <sidebar-link to="/typography">
-                <md-icon>library_books</md-icon>
-                <p>Typography</p>
-            </sidebar-link>
-            <sidebar-link to="/icons">
-                <md-icon>bubble_chart</md-icon>
-                <p>Icons</p>
-            </sidebar-link>
-            <sidebar-link to="/maps">
-                <md-icon>location_on</md-icon>
-                <p>Maps</p>
-            </sidebar-link>
-            <sidebar-link to="/notifications">
-                <md-icon>notifications</md-icon>
-                <p>Notifications</p>
+           <sidebar-link to="equipment">
+               <md-icon>storefront</md-icon>
+               <p>Equipment</p>
+           </sidebar-link>
+            <sidebar-link to="activities">
+                <md-icon>sports_rugby</md-icon>
+                <p>Activities</p>
             </sidebar-link>
         </side-bar>
 
@@ -48,14 +36,12 @@
 
             <dashboard-content></dashboard-content>
 
-            <content-footer v-if="!$route.meta.hideFooter"></content-footer>
         </div>
     </div>
 </template>
 
 <script>
 import TopNavbar from "./TopNavbar.vue";
-import ContentFooter from "./ContentFooter.vue";
 import DashboardContent from "./Content.vue";
 import MobileMenu from "@/pages/Layout/MobileMenu.vue";
 import FixedPlugin from "./Extra/FixedPlugin.vue";
@@ -64,7 +50,6 @@ export default {
     components: {
         TopNavbar,
         DashboardContent,
-        ContentFooter,
         MobileMenu,
         FixedPlugin
     },
