@@ -3,18 +3,20 @@ import DashboardLayout from "@/pages/Layout/DashboardLayout.vue";
 import Dashboard from "@/pages/Dashboard.vue";
 import UserProfile from "@/pages/UserProfile/UserProfile.vue";
 import UsersIndex from "@/pages/UserProfile/UsersIndex";
-import ProductsIndex from "@/pages/Equipment/EquipmentIndex";
+import EquipmentIndex from "@/pages/Inventory/EquipmentIndex";
 import ActivitiesIndex from "@/pages/Activity/ActivitiesIndex";
+import InventoryIndex from "@/pages/Inventory/InventoryIndex";
+import EditInventory from "@/pages/Inventory/EditInventory";
 
 const routes = [
     {
-        path: "/",
+        path: '/',
         component: DashboardLayout,
-        redirect: "/dashboard",
+        redirect: '/dashboard',
         children: [
             {
-                path: "dashboard",
-                name: "Dashboard",
+                path: 'dashboard',
+                name: 'Dashboard',
                 component: Dashboard
             },
             {
@@ -30,7 +32,17 @@ const routes = [
             {
                 path: 'equipment',
                 name: 'Equipment',
-                component: ProductsIndex
+                component: EquipmentIndex
+            },
+            {
+                path: 'inventory',
+                name: 'Inventory',
+                component: InventoryIndex
+            },
+            {
+                path: 'inventory/:id',
+                name: 'Edit Inventory',
+                component: EditInventory
             },
             {
                 path: 'activities',

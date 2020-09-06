@@ -11,13 +11,13 @@
                 <md-icon>dashboard</md-icon>
                 <p>Dashboard</p>
             </sidebar-link>
-            <sidebar-link to="users">
+            <sidebar-link to="/users">
                 <md-icon>person</md-icon>
                 <p>All Users</p>
             </sidebar-link>
-           <sidebar-link to="equipment">
+           <sidebar-link to="/inventory">
                <md-icon>storefront</md-icon>
-               <p>Equipment</p>
+               <p>Inventory</p>
            </sidebar-link>
             <sidebar-link to="activities">
                 <md-icon>sports_rugby</md-icon>
@@ -27,12 +27,6 @@
 
         <div class="main-panel">
             <top-navbar></top-navbar>
-
-            <fixed-plugin
-                :color.sync="sidebarBackground"
-                :image.sync="sidebarBackgroundImage"
-            >
-            </fixed-plugin>
 
             <dashboard-content></dashboard-content>
 
@@ -44,14 +38,12 @@
 import TopNavbar from "./TopNavbar.vue";
 import DashboardContent from "./Content.vue";
 import MobileMenu from "@/pages/Layout/MobileMenu.vue";
-import FixedPlugin from "./Extra/FixedPlugin.vue";
 
 export default {
     components: {
         TopNavbar,
         DashboardContent,
         MobileMenu,
-        FixedPlugin
     },
     data() {
         return {

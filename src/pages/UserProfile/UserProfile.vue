@@ -28,7 +28,7 @@ export default {
         if (this.$route.params.id) {
             this.$http
                 .get(`/users/${this.$route.params.id}`)
-                .then(res => {console.log(res); this.user = res.data.data;})
+                .then(res => this.user = res.data.data)
                 .catch(err => console.error(err));
         }
     }
